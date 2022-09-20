@@ -2,7 +2,6 @@
 # my_list = ['a', 'b', [1, 2, 3], 'd']
 # print(*my_list[2])
 
-#
 # 3.2 Дан список list_1 = ['Hi', 'ananas', 2, None, 75, 'pizza', 36, 100]
 #    - получите сумму всех чисел, - готово
 #    - распечатайте все строки, где есть буква 'a'
@@ -12,6 +11,16 @@
 # result2 = list(filter(lambda x: isinstance('a', str), list_1))
 # print(result2)
 # print(sum(number))
+
+# Альтернативные решения
+# sum1 = 0
+# for i in list_1:
+#     if type(i) == int:
+#         sum1 += i
+# print(sum1)
+
+# print(sum([x for x in list_1 if type(x) == int]))
+# print(*[y for y in list_1 if type(y) == str and 'a' in y])
 
 # 3.3. Превратите лист ['cat', 'dog', 'horse, 'cow'] в кортеж - готово
 
@@ -50,7 +59,7 @@
 # }
 # print(*film.keys()) # посмотреть ключи
 # print(*film.values()) # посмотреть значение
-# print(*film)
+# print(*film.items())
 #
 # 3.6. Найдите сумму всех значений в словаре my_dictionary = {'num1': 375, 'num2': 567, 'num3': -37, 'num4': 21} - готово
 # my_dictionary = {'num1': 375, 'num2': 567, 'num3': -37, 'num4': 21}
@@ -58,6 +67,10 @@
 #
 # 3.7. Удалите повторяющиеся значения из списка [1, 2, 3, 4, 5, 3, 2, 1] - готово
 # print(set([1, 2, 3, 4, 5, 3, 2, 1]))
+
+# list1 = [1, 2, 3, 4, 5, 3, 2, 1]
+# ints_list1 = list(set(list1))
+# print(*ints_list1)
 
 # 3.8. Даны два множества: set1 = {'a', 'z', 1, 5, 9, 12, 100, 'b'}, set2 = {5, 'z', 1, 8, 9, 21, 100, 'l', 785} - готово
 #      - найдите значения, которые встречаются в обоих множествах
@@ -70,7 +83,3 @@
 # print(set1.issubset(set2))
 # print(set2.issubset(set1))# проверка подмножества
 
-# list_1 = ['Hi', 'ananas', 2, None, 75, 'pizza', 36, 100]
-# for i in list_1:
-#     if type(i) is int:
-#         print(i)
