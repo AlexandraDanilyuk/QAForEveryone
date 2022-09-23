@@ -62,8 +62,8 @@
 # print(*film.items())
 #
 # 3.6. Найдите сумму всех значений в словаре my_dictionary = {'num1': 375, 'num2': 567, 'num3': -37, 'num4': 21} - готово
-# my_dictionary = {'num1': 375, 'num2': 567, 'num3': -37, 'num4': 21}
-# print(sum(my_dictionary.values()))
+my_dictionary = {'num1': 375, 'num2': 567, 'num3': -37, 'num4': 21}
+print(sum(my_dictionary.values()))
 #
 # 3.7. Удалите повторяющиеся значения из списка [1, 2, 3, 4, 5, 3, 2, 1] - готово
 # print(set([1, 2, 3, 4, 5, 3, 2, 1]))
